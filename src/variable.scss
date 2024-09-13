@@ -1,0 +1,23 @@
+$hoverColor: #147efb ;
+$textColor: #2d2e32 ;
+%li{
+    a{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    }
+    a.active:before{
+      color: $hoverColor ;
+    }
+    a::before{
+      color: $textColor;
+      content: "Home"
+    }
+    a:hover:before{
+    transition: 0.5s;
+      color: $hoverColor ;
+    }
+    span{
+      display: none;
+    }
+  }

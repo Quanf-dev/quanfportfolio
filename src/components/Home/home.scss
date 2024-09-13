@@ -1,0 +1,114 @@
+@import '../../variable.scss';
+
+.container{
+        .content{
+            margin: 0% 25%;
+
+            .hero-main{
+                height: 65rem;
+                display: flex;
+                align-items: center;
+                gap: 10rem;
+                position: relative;
+                .hero-text{
+                    max-width: 50rem;
+                    display: flex;
+                    flex-direction: column;
+                    .hero-text-h1{
+                        position: relative;
+                        margin-bottom: 2rem;
+                        h1{
+                            color: $textColor;
+                            line-height: 1.2;
+                            font-size: 5.5rem;
+                        }
+                        img{
+                            bottom: 1rem;
+                            right: 13rem;
+                            position: absolute;
+                            height: 6rem;
+                            width: 6rem;
+                        }
+                    }
+                    p{
+                        color: #555;
+                        font-family: Mulish, sans-serif;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        line-height: 1.6;
+                    }
+                    span{
+                        cursor: pointer;
+                        display: flex;
+                        gap: 1.3rem;
+                        margin: 2.5rem 0;
+                        .icon{
+                            color: #2d2e32;
+                            font-size: 3.2rem;
+                        }
+                        a:hover { 
+                            transition: 0.5s;
+                            .icon{
+                                color: $hoverColor;
+                            }
+                        }
+                    }
+                }
+                .hero-img {
+                    background-image: url("../../assets/avatar.png") ;
+                    width: 35rem;
+                    height: 35rem;
+                    background-size: 100%;
+                    background-position: 50% ;
+                    background-repeat: no-repeat;
+                    border: 3px solid #2d2e32;
+                    -webkit-animation: morph 8s ease-in-out infinite;
+                    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                    position: relative;
+                    transition: all 1s ease-in-out;
+                    @keyframes morph {
+                        0% {
+                          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                        }
+                        50% {
+                          border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+                        }
+                        100% {
+                          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                        }
+                      }
+                  }
+                  .hero-skill{
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    p{
+                        border-right: 2px solid rgba(45, 46, 50, .5);
+                        color: #2d2e32;
+                        font-family: "Mulish", sans-serif;
+                        font-weight: 600;
+                        font-size: 1.7rem;
+                        margin-right: 7rem;
+                        padding-right: 2rem;
+                    }
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        gap: 3rem;
+                        li{
+                            cursor: pointer;
+                          
+                            img:hover{
+                                transition:.3s ease-in-out;
+                                -webkit-transform: translateY(-1rem);
+                                transform: translateY(-1rem)
+                            }
+                        }
+                    }
+                  }      
+        }
+        
+        }
+}

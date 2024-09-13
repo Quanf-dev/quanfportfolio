@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Topbar from "./components/topbar/Topbar";
+import "./app.scss"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
+import Fullpage from "./FullPage"
+import Home  from "./components/Home/Home";
 
 function App() {
+  const [menuOpen,setMenuOpen] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Router>
+      <Routes>
+        <Route path="/" element={ <div className="top">
+             <Topbar/>
+            <div className="container">
+            <Fullpage/>
+            </div>
+            </div>
+           } />
+       
+            
+           
+      </Routes>
+    </Router>
     </div>
+  
   );
 }
 
