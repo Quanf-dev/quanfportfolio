@@ -7,7 +7,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className='section container'>
+      <div className='section'>
           <div className='content'>
           <div className='hero-main'>
                 <div className='hero-text'>
@@ -41,6 +41,7 @@ export default class Home extends Component {
                       <li>
                         <img src="https://skillicons.dev/icons?i=tailwind,scss" />
                       </li>
+                      
                     </ul>
                 </div>
           </div>

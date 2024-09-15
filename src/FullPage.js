@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Project from "./components/Project/Project";
 import Contact from "./components/Contact/Contact";
+
 const anchors = ["Home", "About", "Project","Contact"];
 
 const FullPage = () => (
@@ -16,9 +17,7 @@ const FullPage = () => (
     navigat
     scrollingSpeed={1000}
     scrollOverflow={true}
-    sectionsColor={["#f9f9f9","#f9f9f9","#00ffff","#29ab87" ]}
-    render={({ state, fullpageApi }) => {
-      console.log("render prop change", state, fullpageApi);
+    render={() => {
       return (
         <div className="sections">
           <Home />

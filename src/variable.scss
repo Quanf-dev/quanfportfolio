@@ -1,11 +1,7 @@
 $hoverColor: #147efb ;
 $textColor: #2d2e32 ;
+$maincolor: #f9f9f9 ;
 %li{
-    a{
-    display:block;
-    margin-top: auto;
-    margin-bottom: auto;
-    }
     a.active:before{
       color: $hoverColor ;
     }
@@ -20,4 +16,42 @@ $textColor: #2d2e32 ;
     span{
       display: none;
     }
-  }
+  };
+  
+%heading{
+  .heading-main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 4rem;
+            margin: 2rem 0 0;
+           .heading-top{
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            color: $textColor;
+            position: relative;
+            &::after{
+                content: '';
+                height: 5px;
+                width: 3rem;
+                background: $hoverColor;
+                position: absolute;
+                border-radius: 5px;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                top: calc(100% + 1.5rem);
+            }
+           }
+           .heading-bottom{
+            color: #555;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 100;
+            max-width: 80rem;
+            line-height: 1.6;
+           }
+}
+}

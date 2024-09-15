@@ -1,9 +1,9 @@
 @import '../../variable.scss';
 
-.container{
+.section{
+    position: relative;
         .content{
             margin: 0% 25%;
-
             .hero-main{
                 height: 65rem;
                 display: flex;
@@ -109,6 +109,6 @@
                     }
                   }      
         }
-        
+    
         }
 }

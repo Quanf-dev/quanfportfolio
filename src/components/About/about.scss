@@ -1,6 +1,135 @@
-.hero{
-    background-color: red !important;
-    font-size: 60px;
-    flex-direction: row ;
-    justify-content: center ;
+@import '../../variable.scss';
+
+.about{
+    .content{
+        margin: 0% 5%;
+        @extend %heading;   
+        .about-content{
+            margin: 11rem 15% 0;
+            display: flex;
+            gap: 10rem;
+            min-height: 50rem;
+            position: relative;
+            h3{
+                color: $textColor;
+                font-size: 2.6rem;
+                font-weight: 700;
+            }
+            .left-detail{
+                margin-top: 3.5rem;
+                max-width: 60rem;
+                margin-bottom: 3rem;
+                p{
+                    margin-top: 2rem;    
+                    font-size: 1.7rem;   
+                    font-weight: 400;
+                    color: #555;
+                    a{
+                        color: $hoverColor;
+                        font-weight: 700;
+                        margin: 0 3px;
+                    }
+                }
+            }
+            .btn{
+                letter-spacing: 1px;
+                bottom: 2px;
+                position: absolute;
+                font-size: 1.6rem;
+                padding: 1.5rem 5rem;
+                display: inline-block;
+                border-radius: 5px;
+                font-weight: 700;
+                color: #fff;
+                text-decoration: none;
+                background-color: $hoverColor;
+                box-shadow:0 5px 15px 0 rgba(0,0,0,0.15);
+            }
+            .about-right{
+                .right-detail{
+                    color: #555;
+                    margin-top: 3.5rem;
+                    li{
+                        text-transform: uppercase;
+                        list-style: none;
+                        margin-top: 2rem;
+                        span{
+                            display:inline-block;
+                            background: #fff ;
+                            width: 50rem;
+                            height: 2rem;
+                            border-radius: 10px;
+                            box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                            transition: all 1s;
+                            > *{
+                            background: $hoverColor; 
+                            }
+                            .html{
+                                animation: html 4s;
+                                width: 90%;
+                            }
+                            .css{
+                                animation: css 4s;
+                                width: 60%;
+                            }
+                            .javascript{
+                                animation: javascript 4s;
+                                width: 70%;
+                            }
+                            .react{
+                                animation: react 4s;
+                                width: 80%;
+                            }
+                            .nodejs{
+                                animation: nodejs 4s;
+                                width: 50%;
+                            }
+                            }
+                            @keyframes html {
+                                0%{
+                                    width: 0%;
+                                }
+                                100%{
+                                    width: 90%;
+                                }
+                            }
+                            @keyframes css {
+                                0%{
+                                    width: 0%;
+                                }
+                                100%{
+                                    width: 60%;
+                                }
+                            }
+                            @keyframes javascript {
+                                0%{
+                                    width: 0%;
+                                }
+                                100%{
+                                    width: 70%;
+                                }
+                            }
+                            @keyframes react {
+                                0%{
+                                    width: 0%;
+                                }
+                                100%{
+                                    width: 80%;
+                                }
+                            }
+                            @keyframes nodejs {
+                                0%{
+                                    width: 0%;
+                                }
+                                100%{
+                                    width: 50%;
+                                }
+                            }
+                        }
+                      
+                }
+               
+            }
+        }   
+     }
 }
