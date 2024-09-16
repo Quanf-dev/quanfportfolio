@@ -1,8 +1,12 @@
 @import '../../variable.scss';
 
 .about{
-    .content{
-        margin: 0% 5%;
+    .container-about{
+        margin: 0 5%;
+    .content-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @extend %heading;   
         .about-content{
             margin: 11rem 15% 0;
@@ -132,4 +136,6 @@
             }
         }   
      }
+}
+      
 }

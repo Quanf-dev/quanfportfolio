@@ -1,9 +1,12 @@
 @import '../../variable.scss';
 
-.section{
-    position: relative;
-        .content{
-            margin: 0% 25%;
+.home{
+    .container-home{
+        margin: 0% auto;
+        padding: 0 4rem;   
+        .content-home{
+            display: flex;
+            justify-content: center;
             .hero-main{
                 height: 65rem;
                 display: flex;
@@ -46,7 +49,9 @@
                             color: #2d2e32;
                             font-size: 3.2rem;
                         }
+                        
                         a:hover { 
+                            
                             transition: 0.5s;
                             .icon{
                                 color: $hoverColor;
@@ -79,8 +84,8 @@
                       }
                   }
                   .hero-skill{
-                    bottom: 0;
                     left: 0;
+                    bottom: 0;
                     position: absolute;
                     display: flex;
                     align-items: center;
@@ -99,16 +104,18 @@
                         gap: 3rem;
                         li{
                             cursor: pointer;
-                          
+                            -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
                             img:hover{
+                               
                                 transition:.3s ease-in-out;
                                 -webkit-transform: translateY(-1rem);
                                 transform: translateY(-1rem)
                             }
                         }
                     }
-                  }      
+                  }           
         }
-    
+       
         }
+    }
 }

@@ -1,10 +1,14 @@
 @import '../../variable.scss' ; 
 
-
-.contact{
-    .content{
-        margin: 0 25% ;
-        height: calc(100vh - 80px);
+.section{
+    .container-contact{
+    margin: 0 25% ;
+    padding: 3rem;
+    .content-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @extend %heading;   
         .contact-form-main{
             display: flex;
@@ -59,27 +63,52 @@
             display: block;
             align-items: center;
             h3{
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 font-weight: 700;
                 width:inherit;
                 margin: 0 auto;
             }
             p{
-                align-items: center;
                 margin-top: 3rem;
                 font-weight: 500;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 color: #333;   
                 display: flex;
                 align-items: center;
+                position: relative;
+                &::after{
+                    bottom: -4px;
+                    position: absolute;
+                    width: 20px;
+                    height: 3px;
+                    content: '';
+                    background: #f0f0f0;    
+                    }
+                 &:nth-of-type(4){
+                    &::after{
+                    width:0;
+                    height:0;
+                    content: '';
+                    }
+                    .icon{
+                        color: #333;
+                        bottom: 1px;
+                        right: 10rem;
+                        position: absolute;            
+                    }
+                    }   
                 .icon{
+                    color: $hoverColor;
                     margin-left: 3px;
-                    font-size: 1.2rem;
+                    font-size: 2rem;
                 }
+               
             }
+           
             
         }
         }
     }
   
+}
 }
