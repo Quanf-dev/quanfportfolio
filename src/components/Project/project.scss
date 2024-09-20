@@ -19,7 +19,9 @@
                 .left{
                     flex: 5;
                     height: 100%;
-                    background-color: red;
+                    .video{
+                       clip-path: circle(90%);
+                    }
                 }
                 .right{
                     flex: 5;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import HoverVideoPlayer from 'react-hover-video-player';
 import './project.scss'
 
 export default class Project extends Component {
@@ -14,7 +14,9 @@ export default class Project extends Component {
               </h2>
               <div className="project-main">
               <div className="left">
-
+              <HoverVideoPlayer className='video'
+                 videoSrc={require('../../assets/fb.mp4')} 
+              />
               </div>  
               <div className="right">
                   
