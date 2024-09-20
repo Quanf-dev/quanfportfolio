@@ -47,11 +47,10 @@
                         margin: 2.5rem 0;
                         .icon{
                             color: #2d2e32;
-                            font-size: 3.2rem;
+                            width: 32px;
+                            height: 32px;
                         }
-                        
                         a:hover { 
-                            
                             transition: 0.5s;
                             .icon{
                                 color: $hoverColor;

@@ -1,0 +1,33 @@
+@import '../../variable.scss';
+
+.section{
+    .container-project{
+        margin: 0 auto;
+        padding: 3rem;
+        .content-project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            @extend %heading ;    
+            .project-main{
+                margin-top: 6rem;
+                height: 53rem;
+                width: 100rem;
+                padding: 3rem;
+                display: flex;
+                .left{
+                    flex: 5;
+                    height: 100%;
+                    background-color: red;
+                }
+                .right{
+                    flex: 5;
+                    height: 100%;
+                    background-color: yellow;
+                }
+            }    
+        }
+       
+    }
+}

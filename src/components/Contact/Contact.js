@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import './contact.scss'
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import MoodIcon from '@mui/icons-material/Mood';
-import PhoneIcon from '@mui/icons-material/Phone';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import {LocationIcon,MailIcon,PhoneIcon,GithubIcon,FacebookIcon} from '../Icon/indexIcon'
+
+
 export default class Contact extends Component {
   render() {
     return (
@@ -29,14 +28,52 @@ export default class Contact extends Component {
                     Message
                   <textarea placeholder='Enter your Message' type="text" />
                   </label>
+                  <button type='submit' className='btn'>Submit</button>
                   </form>  
               </div>
               <div className="form-left">
-                <h3>Contact information</h3>  
-                <p>My address: Quang Tri, Viet Nam <LocationOnIcon className='icon'/></p>
-                <p>My Email: quanf.dev@gmail.com <MailOutlineIcon className='icon'/> </p>
+                <div className="box-icon">
+                    <span><LocationIcon className='icon'/></span>
+                    <div className="box-detail">
+                    <h3>Location</h3>
+                    <p>QuangTri, VietNam</p>
+                    </div>
+                </div>
+                <div className="box-icon">
+                    <span><MailIcon className='icon'/></span>
+                    <div className="box-detail">
+                    <h3>Mail</h3>
+                    <p>quanf.dev@gmail.com</p>
+                    </div>
+                </div>
+                <div className="box-icon">
+                    <span><PhoneIcon className='icon'/></span>
+                    <div className="box-detail">
+                    <h3>Number</h3>
+                    <p>+84 34 226 8998 </p>
+                    </div>
+                </div>
+                <div className="box-icon">
+                    <span><GithubIcon className='icon'/></span>
+                    <div className="box-detail">
+                    <h3>Github</h3>
+                    <p>github.com/quanf-dev</p>
+                    </div>
+                </div>
+                <div className="box-icon">
+                    <span><FacebookIcon className='icon'/></span>
+                    <div className="box-detail">
+                    <h3>Facebook</h3>
+                    <p>facebook.com/quanf.dev</p>
+                    </div>
+                </div>
+               
+                {/* <p>My Email: quanf.dev@gmail.com <MailOutlineIcon className='icon'/> </p>
                 <p>My Number: +84 34226 8998 <PhoneIcon className='icon'/> </p>
-                <p>Hopefully we will have another chance to work together in the future! Thank you <MoodIcon className='icon'/> </p>
+                <p>Hopefully we will have another chance to work together in the future! Thank you <MoodIcon className='icon'/> </p> */}
+                <div className="social-icon-main">
+                  
+                </div>
               </div>
               </div>
               </div>

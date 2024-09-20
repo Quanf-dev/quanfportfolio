@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './home.scss'
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import { colors } from '@mui/material';
+import {GithubIcon,TelegramIcon} from '../Icon/indexIcon'
 export default class Home extends Component {
 
   render() {
@@ -22,7 +20,7 @@ export default class Home extends Component {
                   Hi, I'm Hoang Bao Quan. A passionate Front-end React Developer based in QuangTri, VietNam. 📍
                   </p>
                   <span>
-                    <a  > <GitHubIcon  className='icon'/></a>
+                    <a> <GithubIcon className='icon' /></a>
                     <a > <TelegramIcon className='icon'/></a>
                   </span>
                 </div>
@@ -42,7 +40,6 @@ export default class Home extends Component {
                       <li>
                         <img src="https://skillicons.dev/icons?i=tailwind,scss" />
                       </li>
-                      
                     </ul>
                 </div>
           </div>
