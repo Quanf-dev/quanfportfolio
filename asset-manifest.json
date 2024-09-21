@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/QuanF.dev-Portfolio/static/css/main.b2aa3a58.css",
-    "main.js": "/QuanF.dev-Portfolio/static/js/main.6fa24fb2.js",
+    "main.css": "/QuanF.dev-Portfolio/static/css/main.4ac5aaf9.css",
+    "main.js": "/QuanF.dev-Portfolio/static/js/main.95c060e6.js",
     "static/media/fb.mp4": "/QuanF.dev-Portfolio/static/media/fb.77aaf7a18b8a19a7a382.mp4",
     "static/media/avatar.png": "/QuanF.dev-Portfolio/static/media/avatar.2c2ab22f3c11b0c9ae97.png",
     "static/media/image.png": "/QuanF.dev-Portfolio/static/media/image.fc02110dda8905ad6dea.png",
     "index.html": "/QuanF.dev-Portfolio/index.html",
-    "main.b2aa3a58.css.map": "/QuanF.dev-Portfolio/static/css/main.b2aa3a58.css.map",
-    "main.6fa24fb2.js.map": "/QuanF.dev-Portfolio/static/js/main.6fa24fb2.js.map"
+    "main.4ac5aaf9.css.map": "/QuanF.dev-Portfolio/static/css/main.4ac5aaf9.css.map",
+    "main.95c060e6.js.map": "/QuanF.dev-Portfolio/static/js/main.95c060e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2aa3a58.css",
-    "static/js/main.6fa24fb2.js"
+    "static/css/main.4ac5aaf9.css",
+    "static/js/main.95c060e6.js"
   ]
 }
