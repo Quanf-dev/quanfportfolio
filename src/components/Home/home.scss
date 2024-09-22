@@ -2,8 +2,7 @@
 
 .home{
     .container-home{
-        margin: 0% auto;
-        padding: 0 4rem;   
+        margin-bottom: 16rem;  
         .content-home{
             display: flex;
             justify-content: center;
@@ -103,9 +102,7 @@
                         gap: 3rem;
                         li{
                             cursor: pointer;
-                            -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
                             img:hover{
-                               
                                 transition:.3s ease-in-out;
                                 -webkit-transform: translateY(-1rem);
                                 transform: translateY(-1rem)

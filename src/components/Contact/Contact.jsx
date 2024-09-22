@@ -1,10 +1,7 @@
-import React, { Component } from 'react'
 import './contact.scss'
 import {LocationIcon,MailIcon,PhoneIcon,GithubIcon,FacebookIcon} from '../Icon/indexIcon'
 
-
-export default class Contact extends Component {
-  render() {
+export default function Contact() {
     return (
       <div className='section'>
         <div className="container-contact">
@@ -67,12 +64,7 @@ export default class Contact extends Component {
                     <p>facebook.com/quanf.dev</p>
                     </div>
                 </div>
-               
-                {/* <p>My Email: quanf.dev@gmail.com <MailOutlineIcon className='icon'/> </p>
-                <p>My Number: +84 34226 8998 <PhoneIcon className='icon'/> </p>
-                <p>Hopefully we will have another chance to work together in the future! Thank you <MoodIcon className='icon'/> </p> */}
                 <div className="social-icon-main">
-                  
                 </div>
               </div>
               </div>
@@ -81,4 +73,4 @@ export default class Contact extends Component {
       </div>
     )
   }
-}
+

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+
 import './about.scss'
 
-export default class About extends Component {
-  render() {
+export default function About() {
+
     return (
         <div className='section about'>
           <div className="container-about">
@@ -18,7 +18,9 @@ export default class About extends Component {
                     <p>I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
                     <p>I follow content related to web development and programming to stay updated and informed. Feel free to connect with me on <a href="">Tiktok</a> and <a href="">Instagram </a>  for more insights and discussions in the developer community</p>
                     <p>I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.</p>
-                    <a className='btn'  href="">My CV</a>                 
+                  </div>
+                  <div>
+                    <a className='btn'  href="">My CV</a>    
                   </div>
                 </div>
                 <div className="about-right">
@@ -47,4 +49,4 @@ export default class About extends Component {
           </div>
     )
   }
-}
+
