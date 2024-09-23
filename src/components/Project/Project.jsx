@@ -15,9 +15,12 @@ export default function Project() {
                 <div className='left'>
                   
                 </div>
+          
               <div className="mid">
-                <div className='video-main'>
-                <HoverVideoPlayer  
+              </div>
+              <div className="right">
+               
+                {/* <HoverVideoPlayer  
                 videoStyle={{
                   width: '400px',
                   height: '263px',
@@ -28,12 +31,10 @@ export default function Project() {
                 }
                 restartOnPaused
                  videoSrc={require('../../assets/video.mp4')} 
-              />
-                </div>
+              /> */}
+                
                 
               </div>  
-              <div className="right">
-              </div>
                 </div>  
                 </div>
                 </div>
