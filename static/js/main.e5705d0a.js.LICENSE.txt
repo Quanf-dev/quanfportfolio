@@ -18,13 +18,6 @@
  */
 
 /**
- * @component HoverVideoPlayer
- * @license MIT
- *
- * @param {HoverVideoPlayerProps} props
- */
-
-/**
  * @license React
  * react-dom.production.min.js
  *
