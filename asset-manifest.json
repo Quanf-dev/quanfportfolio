@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/QuanF.dev-Portfolio/static/css/main.a82599bf.css",
-    "main.js": "/QuanF.dev-Portfolio/static/js/main.e5705d0a.js",
-    "static/media/slide1.png": "/QuanF.dev-Portfolio/static/media/slide1.d8cbc82d72e2cfe49c90.png",
-    "static/media/slide2.png": "/QuanF.dev-Portfolio/static/media/slide2.f830b90ac138a7f22f83.png",
-    "static/media/slide3.png": "/QuanF.dev-Portfolio/static/media/slide3.8053eae79e48bdd4019c.png",
+    "main.css": "/QuanF.dev-Portfolio/static/css/main.22f03f0b.css",
+    "main.js": "/QuanF.dev-Portfolio/static/js/main.f08fc85e.js",
     "static/media/avatar.png": "/QuanF.dev-Portfolio/static/media/avatar.2c2ab22f3c11b0c9ae97.png",
+    "static/media/phone.png": "/QuanF.dev-Portfolio/static/media/phone.6bf843fc690e4f007d80.png",
     "static/media/image.png": "/QuanF.dev-Portfolio/static/media/image.fc02110dda8905ad6dea.png",
     "static/media/laptop.png": "/QuanF.dev-Portfolio/static/media/laptop.eef87df429d3ce9190be.png",
-    "static/media/phone.png": "/QuanF.dev-Portfolio/static/media/phone.202e1f0824d550dabb5f.png",
     "index.html": "/QuanF.dev-Portfolio/index.html",
-    "main.a82599bf.css.map": "/QuanF.dev-Portfolio/static/css/main.a82599bf.css.map",
-    "main.e5705d0a.js.map": "/QuanF.dev-Portfolio/static/js/main.e5705d0a.js.map"
+    "static/media/arrow.svg": "/QuanF.dev-Portfolio/static/media/arrow.319135097826a44c2402.svg",
+    "main.22f03f0b.css.map": "/QuanF.dev-Portfolio/static/css/main.22f03f0b.css.map",
+    "main.f08fc85e.js.map": "/QuanF.dev-Portfolio/static/js/main.f08fc85e.js.map"
   },
   "entrypoints": [
-    "static/css/main.a82599bf.css",
-    "static/js/main.e5705d0a.js"
+    "static/css/main.22f03f0b.css",
+    "static/js/main.f08fc85e.js"
   ]
 }
