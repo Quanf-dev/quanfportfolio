@@ -65,7 +65,7 @@ export default function Home() {
             <h1>
               Front-End React <br/> Developer
             </h1>
-            <img src={require('../../assets/image.png')} alt="waving_hand"></img>
+          <div className="hi-icon"></div>
             </div>
             <p>
             Hi, I'm Hoang Bao Quan. A passionate Front-end React Developer based in QuangTri, VietNam. 📍

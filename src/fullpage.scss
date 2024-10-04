@@ -1,6 +1,7 @@
 @import './variable.scss';
 .section{
   padding-top: 8rem;
+  background-color: #f9f9f9;
 }
 .fp-watermark{
   display: none;
@@ -8,9 +9,29 @@
 #header{
   top:0px;
 }
-.section{
-  background-color: #f9f9f9;
+
+.fp-slidesNav.fp-bottom{
+  bottom: 10rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+    li{
+      width: 30px;
+      height: 10px;
+      border-radius: 20px;
+      border: 1.5px solid #666;
+      margin-right: -2px;
+      a.active{
+        transition: 0.5s;
+        background-color: $hoverColor ;
+      }
+      span{
+        display: none;
+      }
+    }
+ 
 }
+
 #fp-nav.fp-right{
   width: 33rem;
   top: 6rem;

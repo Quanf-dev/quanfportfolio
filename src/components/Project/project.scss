@@ -8,178 +8,270 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+            margin-top: 3rem;
             @extend %heading ;    
-            padding-bottom: 10rem;
-            .project-main{
-                margin-top: 5rem;
+            .slide{
                 display: flex;
-                gap: 2rem;
-                height: 50rem;
-                width: 60%;
-                .left{
-                    text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .fp-controlArrow.fp-prev {
+                top: 622px;
+                left: 200px;
+                border: none;
+                width: 50px;
+                height: 101px;
+                background: url('../../../public/assets/arrow.svg') no-repeat;
+                cursor: pointer;
+                z-index: 1;
+            }
+            .fp-controlArrow.fp-next {
+                transform: rotate(180deg);
+                top: 600px;
+                right: 200px;
+                border: none;
+                width: 50px;
+                height: 101px;
+                background: url('../../../public/assets/arrow.svg') no-repeat;
+                cursor: pointer;
+                z-index: 1;
+            }
+           
+                     .project-main{
+                    margin-top: 5rem;
                     display: flex;
-                    flex-direction: column;
-                    justify-content: center;
                     gap: 2rem;
-                    h3{
-                        font-weight: 700;
-                        font-size: 2.8rem;
-                    }
-                    p:nth-child(2){
+                    height: 55rem;
+                    width: 70vw;
+                    position: relative;
+                    background-color: #fff;
+                    padding: 2rem;
+                     border-radius: 30px;
+                    .left{
                         text-align: center;
-                        font-size: 1.5rem;
-                        line-height: 1.7;
-                        color: #666;
-                    }
-                    .tech-use-skill{
-                       ul{
-                        flex-wrap: wrap;
                         display: flex;
-                        list-style: none;
-                        gap: 1rem;
-                        li{
-                            font-size: 1.2rem;
-                            border-radius: 5px;
-                            background:rgba(153, 153, 153, 0.2); ;
-                            padding: 1rem 2rem;
-                            font-weight: 600;
-                        }
-                       }
-                    }
-                    .wrapper{
-                        display: flex;
+                        flex-direction: column;
                         justify-content: center;
-                        gap: 3rem;
-                        a{
-                            font-size: 1.5rem;
-                            font-weight: 600;
+                        gap: 2rem;
+                        h3{
+                            font-weight: 700;
+                            font-size: 2.8rem;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            gap: 0.5rem;
-                            cursor: pointer;
-                            &:hover{
-                                color: $hoverColor;
-                            }
-                        }
-                        .icon{
-                            width: 25px;
-                            height: 25px;
-                            
-                        }
-                    }
-                   
-                }
-                .right{
-                    flex: 5;
-                    display: flex;
-                    .phone{
-                        width: 100px;
-                        height: 400px;
-                        background: url(../../assets/phone.png) no-repeat ;
-                        background-size: 100% 55%;
-                        background-position: top 18rem left 0px;
-                    }  
-                    .laptop{
-                        width: 500px;
-                        height: 500px;
-                        background: url(../../assets/laptop.png) no-repeat;
-                        background-size: 90% 60%;
-                        background-position: left 0 top 10rem;
-                        position: relative;
-                        z-index: 999;
-                        .slide-main{
-                            left: 60px;
-                            width: 67%;
-                            height: 49%;
-                            position: relative;
-                            top: 12rem;
-                            overflow: hidden;
-                            &:hover > * {
-                                animation: slide 10s backwards;
-                              }
-                              @keyframes slide {
-                                100% {
-                                  transform: translateY(-200%);
-                                }
-                              }
-                        }
-
-                        .slide1{
-                            width: 100%;
-                            height: 100%;
-                            background: url(../../assets/slide1.png) no-repeat;
-                            background-size:100% 100%;
-                        }
-                        .slide2{
-                            width: 100%;
-                            height: 100%;
-                            background: url(../../assets/slide2.png) no-repeat;
-                            background-size:100% 100%;
-                        }
-                        .slide3{
-                            width: 100%;
-                            height: 100%;
-                            background: url(../../assets/slide3.png) no-repeat;
-                            background-size:100% 100%;
-                        }
-                        .slide-main:hover{
-                            .paused{
-                                animation-play-state: paused;
-                                visibility: hidden;              
-                            }
-                        }
-                        .paused{
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            top: 0;
-                            bottom: 0;
-                            margin: auto;
-                            font-size: 1.3rem;
-                            color: $hoverColor; 
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            z-index: 9999;
-                            -webkit-border-radius: 10px 10px 3px 0px;
-                            animation: bg-blur 5s ;
-                            backdrop-filter: blur(2px);
-                            
+                            gap: 1rem;
                             .icon{
-                                width: 32px;         
+                                color: $hoverColor;
+                                position: relative;
+                                top: 2px;
+                                height: 20px;
+                                width: 20px;
                             }
-                            @keyframes bg-blur {
-                                0% {
-                                    opacity: 0;
-                                  }
-                                  100% {
-                                    opacity: 1;
-                                    
-                                  }
+                        }
+                        p:nth-child(2){
+                            text-align: center;
+                            font-size: 1.5rem;
+                            line-height: 1.7;
+                            color: #666;
+                        }
+                        .tech-use-skill{
+                           ul{
+                            flex-wrap: wrap;
+                            display: flex;
+                            list-style: none;
+                            gap: 1rem;
+                            li{
+                                cursor: pointer;
+                                font-size: 1.2rem;
+                                border-radius: 5px;
+                                background:rgba(153, 153, 153, 0.2); ;
+                                padding: 1rem 2rem;
+                                font-weight: 600;
+                            }
+                           }
+                        }
+                        .wrapper{
+                            display: flex;
+                            justify-content: center;
+                            gap: 3rem;
+                            a{
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 0.5rem;
+                                cursor: pointer;
+                                &:hover{
+                                    color: $hoverColor;
                                 }
                             }
-                                 
-    
-                        // }
-                        // video{
-                        //     position: absolute;
-                        //     top: 10px;
-                        //     left: 50px;
-                        //     border: 1px solid black;
-                        //     border-width: 10px 5px 12px 5px;
-                        //     -webkit-border-radius: 10px 10px 3px 0px;
-                        // }      
+                            .icon{
+                                width: 25px;
+                                height: 25px;
+                                
+                            }
+                        }
                        
-                        
-                    }  
-                }
+                    }
+                    .right{
+                        flex: 5;
+                        display: flex;
+                        .phone{
+                            width: 100px;
+                            height: 400px;
+                            background: url(../../../public/assets/phone.png) no-repeat ;
+                            background-size: 100% 55%;
+                            background-position: top 18rem left 0px;
+                            .slide-main{
+                                left: 5px;
+                                width: 89.5%;
+                                height: 49%;
+                                position: relative;
+                                top: 19.3rem;
+                                overflow: hidden;
+                                border-radius: 3px;
+                                &:hover{
+                                    > * {
+                                        animation: slide 10s;
+                                      }
+                                    .paused{
+                                        animation-play-state: paused;
+                                        visibility: hidden;              
+                                    }
+                                }
+                                 .slide1{
+                                width: 100%;
+                                height: 100%;
+                                background-size:100% 100%;
+                            }
+                            .slide2{
+                                width: 100%;
+                                height: 100%;
+                                background-size:100% 100%;
+                            }
+                            .slide3{
+                                width: 100%;
+                                height: 100%;
+                                background-size:100% 100%;
+                            }
+                            .paused{
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                margin: auto;
+                                font-size: 1.3rem;
+                                color: $hoverColor; 
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                z-index: 9999;
+                                -webkit-border-radius: 10px 10px 3px 0px;
+                                animation: bg-blur 15s ;
+                                backdrop-filter: blur(2px);
+                                
+                                .icon{
+                                    width: 32px;         
+                                }
+                                @keyframes bg-blur {
+                                    0% {
+                                        opacity: 0;
+                                      }
+                                      100% {
+                                        opacity: 1;
+                                        
+                                      }
+                                    }
+                                }
+                            }
+    
+                        }  
+                        .laptop{
+                            width: 500px;
+                            height: 500px;
+                            background: url(../../../public/assets/laptop.png) no-repeat;
+                            background-size: 90% 60%;
+                            background-position: left 0 top 10rem;
+                            position: relative;
+                            z-index: 999;
+                            .slide-main{
+                                left: 60px;
+                                width: 67%;
+                                height: 49%;
+                                position: relative;
+                                top: 12rem;
+                                overflow: hidden;
+                                &:hover > * {
+                                    animation: slide 10s infinite;
+                                  }
+                                  @keyframes slide {
+                                    100% {
+                                      transform: translateY(-200%);
+                                    }
+                                  }
+                                  .slide1{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size:100% 100%;
+                                }
+                                .slide2{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size:100% 100%;
+                                }
+                                .slide3{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size:100% 100%;
+                                }
+                                &:hover{
+                                    .paused{
+                                        animation-play-state: paused;
+                                        visibility: hidden;              
+                                    }
+                                }
+                                .paused{
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    font-size: 1.3rem;
+                                    color: $hoverColor; 
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    z-index: 9999;
+                                    -webkit-border-radius: 10px 10px 3px 0px;
+                                    animation: bg-blur 15s ;
+                                    backdrop-filter: blur(2px);
+                                    
+                                    .icon{
+                                        width: 32px;         
+                                    }
+                                    @keyframes bg-blur {
+                                        0% {
+                                            opacity: 0;
+                                          }
+                                          100% {
+                                            opacity: 1;
+                                            
+                                          }
+                                        }
+                                    }
+                            }
+    
+                        }  
+                    }
+                      
+                }  
                 
+                }
                
-             
-            }    
+            }
+           
         }
        
-    }
-}

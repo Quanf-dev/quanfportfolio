@@ -24,7 +24,9 @@
                             line-height: 1.2;
                             font-size: 5.5rem;
                         }
-                        img{
+                        .hi-icon{
+                            background: url('../../../public/assets/image.png');
+                            background-size: 100% 100%;
                             bottom: 1rem;
                             right: 13rem;
                             position: absolute;
@@ -58,7 +60,7 @@
                     }
                 }
                 .hero-img {
-                    background-image: url("../../assets/avatar.png") ;
+                    background-image: url(../../../public/assets/avatar.png) ;
                     width: 35rem;
                     height: 35rem;
                     background-size: 100%;
