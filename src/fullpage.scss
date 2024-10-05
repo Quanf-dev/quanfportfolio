@@ -11,7 +11,10 @@
 }
 
 .fp-slidesNav.fp-bottom{
-  bottom: 10rem;
+  @include moblie{
+    bottom: 0rem;
+}
+  bottom: 5rem;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -31,11 +34,15 @@
     }
  
 }
-
 #fp-nav.fp-right{
   width: 33rem;
   top: 6rem;
   height: 8rem;
+  @include moblie{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
   ul{
     font-size: 1.7rem;
     font-weight: 600;

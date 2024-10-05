@@ -1,6 +1,7 @@
 $hoverColor: #147efb ;
 $textColor: #2d2e32 ;
 $maincolor: #f9f9f9 ;
+$width-moblie: 768px; 
 %li{
     a.active:before{
       color: $hoverColor ;
@@ -25,6 +26,10 @@ $maincolor: #f9f9f9 ;
             flex-direction: column;
             gap: 4rem;
            .heading-top{
+            @media (max-width: $width-moblie) {
+              font-size: 3.3rem;
+              max-width: 36rem;
+           }
             font-size: 4rem;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -45,6 +50,10 @@ $maincolor: #f9f9f9 ;
             }
            }
            .heading-bottom{
+            @media (max-width: $width-moblie) {
+              font-size: 1.5rem;
+              max-width: 36rem;
+           }
             color: #555;
             text-align: center;
             font-size: 2rem;
@@ -54,6 +63,20 @@ $maincolor: #f9f9f9 ;
            }
 }
 }
-@mixin slide-animation(){
 
+@mixin moblie{
+  @media (max-width: $width-moblie) {
+     @content ;
+  }
+};
+@mixin slide-height($height-slide){
+  @while  $height-slide < 1000px{
+    @media (min-height: $height-slide ){
+  
+      height: calc($height-slide  - 25rem) ;
+      $height-slide:  $height-slide + 100px ;
+    }
+    
+  }
+ 
 }

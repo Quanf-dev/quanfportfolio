@@ -13,7 +13,7 @@ export default function About() {
               </h2>
               <div className="about-content">
                 <div className="about-left">
-                  <h3>Get to know me</h3>
+                  <h3>Get to know me!</h3>
                   <div className="left-detail">
                     <p>I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
                     <p>I follow content related to web development and programming to stay updated and informed. Feel free to connect with me on <a href="">Tiktok</a> and <a href="">Instagram </a>  for more insights and discussions in the developer community</p>
@@ -24,21 +24,21 @@ export default function About() {
                   </div>
                 </div>
                 <div className="about-right">
-                   <h3>My Skills Progresss</h3>
+                   <h3>My skills progresss</h3>
                    <div className="right-detail">
-                      <li><h2>html</h2>
+                      <li><h2>markup/styling language</h2>
                       <span className='bar'><span className='html'></span></span>
                       </li>
-                      <li><h2>css</h2>
+                      <li><h2>css framewors</h2>
                       <span className='bar'><span className='css'></span></span>
                       </li>
-                      <li><h2>javascript</h2>
+                      <li><h2>javascript framworks</h2>
                       <span className='bar'><span className='javascript'></span></span>
                       </li>
-                      <li><h2>react</h2>
+                      <li><h2>programming language</h2>
                       <span className='bar'><span className='react'></span></span>
                       </li>
-                      <li><h2>nodejs</h2>
+                      <li><h2>tools</h2>
                       <span className='bar'><span className='nodejs'></span></span>
                       </li>
                    </div>

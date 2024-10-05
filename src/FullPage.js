@@ -23,7 +23,10 @@ const FullPage = () => {
         slidesNavigation={true}
         navigat
         scrollingSpeed={1000}
-        render={() => (
+        autoScrolling={true}
+        scrollOverflow={true}
+        normalScrollElements={".fp-scrollable"}
+                render={() => (
           <ReactFullpage.Wrapper>
              <Home />
              <About />

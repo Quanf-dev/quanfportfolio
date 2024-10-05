@@ -11,18 +11,36 @@
             margin: 11rem 15% 0;
             display: flex;
             gap: 10rem;
-            min-height: 50rem;
+            height: 50rem;
             position: relative;
+            @include moblie{
+                flex-direction: column;
+                width: 100%;
+                max-width: 35rem;
+                margin: 5rem ;
+                gap: 6rem;
+                height: auto;
+            }
             h3{
+                @include moblie{
+                    font-size: 2rem;
+                 }
                 color: $textColor;
                 font-size: 2.6rem;
                 font-weight: 700;
             }
             .left-detail{
+                @include moblie{
+                   align-items: center;
+                   margin-top: 3rem;
+                }
                 margin-top: 3.5rem;
                 max-width: 60rem;
                 margin-bottom: 3rem;
                 p{
+                    @include moblie{
+                        font-size: 1.5rem;
+                     }
                     margin-top: 2rem;    
                     font-size: 1.7rem;   
                     font-weight: 400;
@@ -40,6 +58,10 @@
                 }
             }
             .btn{
+                @include moblie{
+                    display: inline-block;
+                    margin-top: 1rem;
+                }
                 letter-spacing: 1px;
                 font-size: 1.6rem;
                 padding: 1.5rem 5rem;
@@ -51,6 +73,14 @@
                 box-shadow:0 5px 15px 0 rgba(0,0,0,0.15);
             }
             .about-right{
+                h3{
+                    @include moblie{
+                        font-size: 2rem;
+                     }
+                    color: $textColor;
+                    font-size: 2.6rem;
+                    font-weight: 700;
+                }
                 .right-detail{
                     color: #555;
                     margin-top: 3.5rem;
@@ -59,39 +89,45 @@
                         list-style: none;
                         margin-top: 2rem;
                         span{
+                            @include moblie{
+                                width: 30rem;
+                             }
                             display:inline-block;
                             background: #fff ;
                             width: 50rem;
                             height: 2rem;
                             border-radius: 10px;
                             box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                            transition: all 1s;
+                            transition: all 1s ;
                             > *{
                             background: $hoverColor; 
                             }
                             .html{
-                                animation: html 4s;
+                                animation: html 5s;
                                 width: 90%;
                             }
                             .css{
-                                animation: css 4s;
+                                animation: css 5s;
                                 width: 60%;
                             }
                             .javascript{
-                                animation: javascript 4s;
+                                animation: javascript 5s;
                                 width: 70%;
                             }
                             .react{
-                                animation: react 4s;
+                                animation: react 5s;
                                 width: 80%;
                             }
                             .nodejs{
-                                animation: nodejs 4s;
+                                animation: nodejs 5s;
                                 width: 50%;
                             }
                             }
                             @keyframes html {
                                 0%{
+                                    width: 0%;
+                                }
+                                30%{
                                     width: 0%;
                                 }
                                 100%{
@@ -102,12 +138,18 @@
                                 0%{
                                     width: 0%;
                                 }
+                                30%{
+                                    width: 0%;
+                                }
                                 100%{
                                     width: 60%;
                                 }
                             }
                             @keyframes javascript {
                                 0%{
+                                    width: 0%;
+                                }
+                                30%{
                                     width: 0%;
                                 }
                                 100%{
@@ -118,12 +160,18 @@
                                 0%{
                                     width: 0%;
                                 }
+                                30%{
+                                    width: 0%;
+                                }
                                 100%{
                                     width: 80%;
                                 }
                             }
                             @keyframes nodejs {
                                 0%{
+                                    width: 0%;
+                                }
+                               30%{
                                     width: 0%;
                                 }
                                 100%{

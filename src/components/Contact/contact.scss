@@ -10,6 +10,12 @@
         align-items: center;
         @extend %heading;   
         .contact-form-main{
+            @include moblie{
+                flex-direction: column;
+                width: 90vw;   
+                height: auto;
+                gap: 1rem;
+            }
             display: flex;
             gap: 10rem;
             margin-top: 6rem;
@@ -28,6 +34,9 @@
                     font-size: 1.2rem;
                     font-weight: 700;
                     input{
+                        @include moblie{
+                            width: 200%;
+                        }
                         font-weight: 500;
                         font-size: 1.3rem;
                         padding: 2rem;
@@ -44,6 +53,9 @@
                         outline: none;
                     }
                     textarea{
+                        @include moblie{
+                            width: 200%;
+                        }
                         @extend input ;
                         display: block;
                         width: 100%;
@@ -106,6 +118,9 @@
                         font-size: 1.7rem;
                     }
                     p{
+                        @include moblie{
+                            width: 20rem;
+                        }
                         cursor: pointer;
                         color: #767676;
                         font-size: 1.7rem;

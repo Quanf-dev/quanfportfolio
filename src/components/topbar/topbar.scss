@@ -14,7 +14,11 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
     display: flex;
     align-items: center;
+   
             h3{
+                @include moblie{
+                    visibility: hidden;
+                 }
                 display: block;
                 font-size: 1.17em;
                 cursor: pointer;

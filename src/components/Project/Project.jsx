@@ -8,7 +8,8 @@ import {
 import listProject from "./dataProject";
 export default function Project() {
   return (
-    <div className="section">
+    <div className="section fp-auto-height-responsive ">
+      
       <div className="container-project">
         <div className="content-project">
           <h2 className="heading-main">
@@ -20,35 +21,9 @@ export default function Project() {
           </h2>
             {listProject.map( item => {
                    return (
-                   <div className="slide" >
+                   <div className="slide .fp-scrollable" >
                    <div className="project-main">
-               
-                    <div className="left">
-                      <h3>
-                        {item.title}
-                        <PortfolioIcon className="icon" />
-                      </h3>
-                      <p>
-                      {item.desc}
-                      </p>
-                      <div className="tech-use-skill">
-                        <ul>
-                          {item.skil.map((skill) => (
-                            <li>{skill}</li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div className="wrapper">
-                        <a>
-                          Code
-                          <GithubIconFill className="icon" />
-                        </a>
-                        <a>
-                          Live Demo <LivedemoIcon className="icon" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="right">
+                   <div className="left">
                       <div className="laptop">
                         <div className="slide-main">
                           <div className="paused">
@@ -78,6 +53,32 @@ export default function Project() {
                         </div>
                       </div>
                     </div>
+                    <div className="right">
+                      <h3>
+                        {item.title}
+                        <PortfolioIcon className="icon" />
+                      </h3>
+                      <p>
+                      {item.desc}
+                      </p>
+                      <div className="tech-use-skill">
+                        <ul>
+                          {item.skil.map((skill) => (
+                            <li>{skill}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="wrapper">
+                        <a>
+                          Code
+                          <GithubIconFill className="icon" />
+                        </a>
+                        <a>
+                          Live Demo <LivedemoIcon className="icon" />
+                        </a>
+                      </div>
+                    </div>
+                  
                 </div>
                 </div>
                 )
