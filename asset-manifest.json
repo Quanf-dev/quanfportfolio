@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/quanfportfolio/static/css/main.fb3ff486.css",
+    "main.css": "/quanfportfolio/static/css/main.54289a7f.css",
     "main.js": "/quanfportfolio/static/js/main.d29db56d.js",
     "static/media/avatar.png": "/quanfportfolio/static/media/avatar.2c2ab22f3c11b0c9ae97.png",
     "static/media/phone.png": "/quanfportfolio/static/media/phone.6bf843fc690e4f007d80.png",
@@ -8,11 +8,11 @@
     "static/media/laptop.png": "/quanfportfolio/static/media/laptop.eef87df429d3ce9190be.png",
     "index.html": "/quanfportfolio/index.html",
     "static/media/arrow.svg": "/quanfportfolio/static/media/arrow.319135097826a44c2402.svg",
-    "main.fb3ff486.css.map": "/quanfportfolio/static/css/main.fb3ff486.css.map",
+    "main.54289a7f.css.map": "/quanfportfolio/static/css/main.54289a7f.css.map",
     "main.d29db56d.js.map": "/quanfportfolio/static/js/main.d29db56d.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb3ff486.css",
+    "static/css/main.54289a7f.css",
     "static/js/main.d29db56d.js"
   ]
 }
