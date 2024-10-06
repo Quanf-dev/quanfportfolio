@@ -9,7 +9,9 @@
 #header{
   top:0px;
 }
-
+.fp-table{
+  justify-content: unset !important;
+}
 .fp-slidesNav.fp-bottom{
   @include moblie{
     bottom: -1rem;
