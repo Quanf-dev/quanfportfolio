@@ -3,11 +3,18 @@
 .about{
     .container-about{
     .content-about{
+       
         display: flex;
         flex-direction: column;
         align-items: center;
         @extend %heading;   
         .about-content{
+           @include laptop(){
+            width: 90%;
+           }
+           @include tablets(){
+            flex-direction: column;
+           }
             margin: 11rem 15% 0;
             display: flex;
             gap: 10rem;
@@ -30,6 +37,7 @@
                 font-weight: 700;
             }
             .left-detail{
+              
                 @include moblie{
                    align-items: center;
                    margin-top: 3rem;

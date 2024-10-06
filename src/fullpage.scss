@@ -12,11 +12,19 @@
 .fp-table{
   justify-content: unset !important;
 }
+.fp-overflow {
+    outline: 0;
+    height: 100%;
+}
 .fp-slidesNav.fp-bottom{
   @include moblie{
     bottom: -1rem;
-}
-  bottom: 5rem;
+  }
+  @include laptop(){
+    @media (min-height:600px) and (max-height:900px){
+     bottom: -1rem;
+    }
+ }
   display:flex;
   align-items:center;
   justify-content:center;

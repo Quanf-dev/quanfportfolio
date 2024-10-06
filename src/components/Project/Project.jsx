@@ -8,7 +8,7 @@ import {
 import listProject from "./dataProject";
 export default function Project() {
   return (
-    <div className="section fp-auto-height-responsive ">
+    <div className="section project fp-auto-height-responsive ">
       
       <div className="container-project">
         <div className="content-project">

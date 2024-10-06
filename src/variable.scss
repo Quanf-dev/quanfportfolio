@@ -2,7 +2,8 @@ $hoverColor: #147efb ;
 $textColor: #2d2e32 ;
 $maincolor: #f9f9f9 ;
 
-$width-moblie: 768px; 
+$width-moblie: 992px; 
+
 %li{
     a.active:before{
       color: $hoverColor ;
@@ -70,18 +71,29 @@ $width-moblie: 768px;
      @content ;
   }
 };
+@mixin tablets{
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content ;
+ }
+}
+@mixin laptop(){
+@media (min-width: 992px) and (max-width: 1366px) {
+  @content
+}
+}
 
 @mixin slide-height(){
-  $height-slide: 667px,844px, 932px;
+  $height-slide: 667px,844px, 932px, ;
   @each $height in  $height-slide {
     @media (min-height: $height ){
       @if($height == 667px){
-        height: calc($height - 26rem) ;
-      }@else if($height == 932px){
+        height: calc($height - 25.8rem) ;
+      }@else if($height == 944px){
         height: calc($height - 20rem) ;
       }
       @else{
-        height: calc($height - 29rem) ;
+       
+        height: calc($height - 19.8rem) ;
       }
     }
   }
