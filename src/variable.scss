@@ -1,6 +1,7 @@
 $hoverColor: #147efb ;
 $textColor: #2d2e32 ;
 $maincolor: #f9f9f9 ;
+
 $width-moblie: 768px; 
 %li{
     a.active:before{
@@ -69,14 +70,20 @@ $width-moblie: 768px;
      @content ;
   }
 };
-@mixin slide-height($height-slide){
-  @while  $height-slide < 1000px{
-    @media (min-height: $height-slide ){
-  
-      height: calc($height-slide  - 25rem) ;
-      $height-slide:  $height-slide + 100px ;
+
+@mixin slide-height(){
+  $height-slide: 667px,844px, 932px;
+  @each $height in  $height-slide {
+    @media (min-height: $height ){
+      @if($height == 667px){
+        height: calc($height - 26rem) ;
+      }@else if($height == 932px){
+        height: calc($height - 20rem) ;
+      }
+      @else{
+        height: calc($height - 29rem) ;
+      }
     }
-    
   }
- 
+  
 }

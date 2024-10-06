@@ -12,7 +12,7 @@
 
 .fp-slidesNav.fp-bottom{
   @include moblie{
-    bottom: 0rem;
+    bottom: -1rem;
 }
   bottom: 5rem;
   display:flex;

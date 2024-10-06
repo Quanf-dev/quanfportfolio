@@ -51,22 +51,24 @@
                     margin-top: 5rem;
                     display: flex;
                     gap: 2rem;
-                    height: 55rem;
+                    height: 53rem;
                     width: 70vw;
                     position: relative;
                     background-color: #fff;
                     padding: 2rem;
                     border-radius: 30px;
                      @include moblie{
-                        box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.5);
                         background-color: $maincolor;
                         border-radius: 0px;
                         margin-top: 2rem;
                         width: 100vw;
-                        height: 40rem;
+                        height: 70rem;
                         flex-direction: column;
-                        @include slide-height(500px) ;
+                        @include slide-height ;
+                    
                      }
+                 
+                   
                     .right{
                         text-align: center;
                         display: flex;
