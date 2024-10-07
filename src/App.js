@@ -8,24 +8,7 @@ import Preloader from "./components/Preloader/Preloader";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [isLoading,setIsLoading] = useState(false) ;
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      
-      if (event.key === 'F5') {
-        event.preventDefault(); 
-        alert('Dont F5 in slidProject.'); 
-      }
-    };
-
-    
-    window.addEventListener('keydown', handleKeyDown);
-
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
+  const [isLoading,setIsLoading] = useState(true) ;
   useEffect(() => {
     setIsLoading(true) ;
     setTimeout(()=>{

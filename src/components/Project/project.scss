@@ -2,13 +2,11 @@
 
 
 .project{
-  
+    @media (min-height:600px) and (max-height:800px) {
+        padding-top: 6rem;
+    }
     .container-project{
         .content-project{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
             @extend %heading ;    
             .slide{
                 height: 60rem;
@@ -20,30 +18,21 @@
                 @include moblie{
                     @include slide-height ;
                 }
-               
-                @include laptop{
-               
-                    @media (min-height:600px) and (max-height:650px){
-                        height: 36rem;      
+                @media (min-height:550px) and (max-height:600px) and (min-width:1200px){
+                    height: 33rem;
+                }
+                    @media (min-height:601px) and (max-height:650px)and (min-width:1200px){
+                        height: 34rem;
                     }
-                    @media (min-height:650px) and (max-height:700px){
+                    @media (min-height:651px) and (max-height:700px)and (min-width:1200px){
                         height: 40.5rem;    
                     }
-                    @media (min-height: 700px) and (max-height:750px){
+                    @media (min-height: 701px) and (max-height:750px)and (min-width:1200px){
                         height: 50.5rem; 
                     }
-                    @media (min-height: 750px) and (max-height:820px){
+                    @media (min-height: 751px) and (max-height:820px)and (min-width:1200px){
                         height: 50.5rem; 
                     }
-                    @media (min-height:600px) and (max-height:900px) {
-                        top: 10px;  
-                    }
-                    top: 50px;
-                    position: relative;
-                }
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
             .fp-controlArrow.fp-prev {
                 @include moblie{
@@ -113,10 +102,8 @@
                     border-radius: 30px;
                     height: 90%;
                     @include laptop{
-                    
                         padding: 0rem;
-                        margin-top: 0rem;
-                       
+                        margin-top: 6rem;
                     }
                     @media (min-width:1500px) {
                         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -132,8 +119,8 @@
                      @include laptop(){
                         background-color: $maincolor;
                         width: 85vw;
-                     
                      }
+                     
                     .right{
                         text-align: center;
                         display: flex;

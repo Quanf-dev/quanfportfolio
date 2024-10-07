@@ -22,7 +22,7 @@ export default function Project() {
           </h2>
             {listProject.map( item => {
                    return (
-                   <div className="slide .fp-scrollable" >
+                   <div className="slide" >
                    <div className="project-main">
                    <div className="left">
                       <div className="laptop">

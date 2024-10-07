@@ -1,5 +1,8 @@
 @import './variable.scss';
 .section{
+  @media (min-height:600px) and (max-height:800px) {
+    padding-top: 6rem;
+}
   padding-top: 8rem;
   background-color: #f9f9f9;
 }
@@ -18,11 +21,15 @@
 }
 .fp-slidesNav.fp-bottom{
   @include moblie{
-    bottom: -1rem;
+    bottom: -1rem !important;
   }
   @include laptop(){
+        
+    @media (min-height:550px) and (max-height:600px){
+      bottom: -1rem !important;
+   }
     @media (min-height:600px) and (max-height:900px){
-     bottom: -1rem;
+     bottom: -1rem !important;
     }
  }
   display:flex;
@@ -45,6 +52,9 @@
  
 }
 #fp-nav.fp-right{
+  @media (min-height:600px) and (max-height:800px) {
+    top: 5rem;
+}
   width: 33rem;
   top: 6rem;
   height: 8rem;

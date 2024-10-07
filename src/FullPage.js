@@ -1,6 +1,6 @@
 
 import React from "react";
-import ReactFullpage,{ FullpageNavigation} from "@fullpage/react-fullpage";
+import ReactFullpage from "@fullpage/react-fullpage";
 import './fullpage.scss';
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -16,19 +16,16 @@ const FullPage = () => {
       <Topbar id="header" />
       <ReactFullpage id='full'
        
-        anchors={anchors}
         navigation
         navigationTooltips={anchors}
         slidesNavigation={true}
         navigat
         scrollingSpeed={1000}
-        autoScrolling={true}
-        scrollOverflow={true}
                 render={() => (
           <ReactFullpage.Wrapper>
              <Home />
              <About />
-             <Project className="slide"/>
+             <Project/>
             <Contact/>
           </ReactFullpage.Wrapper>
         )}
