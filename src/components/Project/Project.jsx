@@ -6,6 +6,7 @@ import {
   PortfolioIcon,
 } from "../Icon/indexIcon";
 import listProject from "./dataProject";
+import { useEffect } from "react";
 export default function Project() {
   return (
     <div className="section project fp-auto-height-responsive ">

@@ -30,7 +30,7 @@ const FullPage = () => {
           <ReactFullpage.Wrapper>
              <Home />
              <About />
-             <Project/>
+             <Project className="slide"/>
             <Contact/>
           </ReactFullpage.Wrapper>
         )}

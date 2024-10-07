@@ -1,0 +1,69 @@
+@import '../../variable.scss';
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $maincolor ;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    span{
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        opacity:1;
+        font-weight: 900;
+        position: absolute;
+        animation: text1 3.5s;
+        visibility: hidden;
+    
+        &:nth-child(2){
+            visibility: hidden;
+            animation: text 0.2s 3.5s;
+        }
+        &:nth-child(3){
+            visibility: hidden;
+            animation: text 0.2s 3.7s;
+        }
+        &:nth-child(4){
+            visibility: hidden;
+            animation: text 0.2s 3.9s;
+        }
+        &:nth-child(5){
+            visibility: hidden;
+            animation: text 0.2s 4.1s;
+        }
+        &:nth-child(6){
+            visibility: hidden;
+            animation: text 0.2s 4.3s;
+        }
+    }
+}
+
+@keyframes text1 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes text {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
