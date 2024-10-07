@@ -2,7 +2,7 @@ $hoverColor: #147efb ;
 $textColor: #2d2e32 ;
 $maincolor: #f9f9f9 ;
 
-$width-moblie: 992px; 
+$width-moblie: 1200px; 
 
 %li{
     a.active:before{
@@ -77,7 +77,7 @@ $width-moblie: 992px;
  }
 }
 @mixin laptop(){
-@media (min-width: 992px) and (max-width: 1366px) {
+@media (min-width: 992px) and (max-width: 1700px) {
   @content
 }
 }
@@ -92,7 +92,6 @@ $width-moblie: 992px;
         height: calc($height - 20rem) ;
       }
       @else{
-       
         height: calc($height - 19.8rem) ;
       }
     }

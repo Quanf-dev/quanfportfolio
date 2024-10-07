@@ -11,19 +11,26 @@
         align-items: center;
             @extend %heading ;    
             .slide{
+                height: 60rem;
+                .fp-overflow {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                }
                 @include moblie{
                     @include slide-height ;
                 }
-                height: 60rem;
+               
                 @include laptop{
+               
                     @media (min-height:600px) and (max-height:650px){
-                        height: 36rem;    
+                        height: 36rem;      
                     }
                     @media (min-height:650px) and (max-height:700px){
                         height: 40.5rem;    
                     }
                     @media (min-height: 700px) and (max-height:750px){
-                        height: 44.5rem; 
+                        height: 50.5rem; 
                     }
                     @media (min-height: 750px) and (max-height:820px){
                         height: 50.5rem; 
@@ -45,19 +52,19 @@
                 @include laptop{
                     top: 722px;
                     left: 50px;    
-                    @media (min-height:600px) and (max-height:700px){
-                        display: none;  
-                    }
-                    @media (min-height:700px) and (max-height:820px){
+                   @media (min-height:600px) and (max-height:765px){
                         display: none;    
                     }
-                    @media (min-height:820px){
+                    @media (max-width:1200px) {
+                        display: none;
+                    }
+                    @media (min-width:1200px){
                         top: 599px;
                         width: 30px;
                         height: 50px;
                     }
                 }
-                top: 622px;
+                top: 579px;
                 left: 200px;
                 border: none;
                 width: 50px;
@@ -71,23 +78,22 @@
                     display: none;
                 }
                 @include laptop{
-                 
+                    @media (max-width:1200px) {
+                        display: none;
+                    }
                     top: 700px;
                     right: 50px;
-                    @media (min-height:600px) and (max-height:700px){
-                        display: none;  
-                    }
-                    @media (min-height:700px) and (max-height:820px){
+                    @media (min-height:600px) and (max-height:765px){
                         display: none;    
                     }
-                    @media (min-height:820px){
+                    @media (min-width:1200px) {
                         top: 599px;
                         width: 30px;
                         height: 50px;
                     }
                 }
                 transform: rotate(180deg);
-                top: 600px;
+                top: 570px;
                 right: 200px;
                 border: none;
                 width: 50px;
@@ -106,6 +112,15 @@
                     padding: 2rem;
                     border-radius: 30px;
                     height: 90%;
+                    @include laptop{
+                    
+                        padding: 0rem;
+                        margin-top: 0rem;
+                       
+                    }
+                    @media (min-width:1500px) {
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                    }
                      @include moblie{
                         background-color: $maincolor;
                         border-radius: 0px;
@@ -119,10 +134,6 @@
                         width: 85vw;
                      
                      }
-                  
-                     
-                 
-                   
                     .right{
                         text-align: center;
                         display: flex;
