@@ -9,7 +9,7 @@ import listProject from "./dataProject";
 import { useEffect } from "react";
 export default function Project() {
   return (
-    <div className="section project fp-auto-height-responsive ">
+    <div className="section project  ">
       
       <div className="container-project">
         <div className="content-project">

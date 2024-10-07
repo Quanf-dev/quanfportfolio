@@ -15,8 +15,7 @@ const FullPage = () => {
     <div className="App">
       <Topbar id="header" />
       <ReactFullpage id='full'
-        debug
-        licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx" 
+       
         anchors={anchors}
         navigation
         navigationTooltips={anchors}
@@ -25,7 +24,6 @@ const FullPage = () => {
         scrollingSpeed={1000}
         autoScrolling={true}
         scrollOverflow={true}
-        normalScrollElements={".fp-scrollable"}
                 render={() => (
           <ReactFullpage.Wrapper>
              <Home />

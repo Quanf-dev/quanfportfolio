@@ -11,17 +11,17 @@ function App() {
   const [isLoading,setIsLoading] = useState(false) ;
   useEffect(() => {
     const handleKeyDown = (event) => {
-      // Check if the F5 key was pressed
+      
       if (event.key === 'F5') {
-        event.preventDefault(); // Prevent page refresh
-        alert('F5 is disabled.'); // Optional: provide user feedback
+        event.preventDefault(); 
+        alert('Dont F5 in slidProject.'); 
       }
     };
 
-    // Add event listener for keydown
+    
     window.addEventListener('keydown', handleKeyDown);
 
-    // Clean up the event listener on component unmount
+
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
